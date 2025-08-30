@@ -68,47 +68,36 @@ export default function PortfolioOne() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "Musix Academy",
       description:
-        "A modern, scalable e-commerce solution built with Next.js and Stripe integration. Features include real-time inventory, advanced search, and mobile-responsive design.",
+        "A modern UI , built in next.JS with the help of modern component library AccernityUI, Typescript , TailwindCSS and mobile-responsive design.",
       image: "https://images.pexels.com/photos/29421581/pexels-photo-29421581.jpeg",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/hiteshchoudhary",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "UI Component Libraries"],
+      liveUrl: "",
+      githubUrl: "https://github.com/",
       featured: true,
       category: "Web Development",
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Mini Gemini",
       description:
         "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.",
       image: "https://images.pexels.com/photos/13847596/pexels-photo-13847596.jpeg",
       technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
       liveUrl: "https://taskmanager-demo.com",
-      githubUrl: "https://github.com/hiteshchoudhary",
+      githubUrl: "https://github.com/",
       featured: true,
-      category: "Full Stack",
+      category: "Frontend Web development",
     },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      description:
-        "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics for multiple cities.",
-      image: "https://images.pexels.com/photos/4443538/pexels-photo-4443538.jpeg",
-      technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Sass"],
-      liveUrl: "https://weather-dashboard-demo.com",
-      githubUrl: "https://github.com/hiteshchoudhary",
-      featured: false,
-      category: "Frontend",
-    },
+    
     {
       id: 4,
-      title: "AI Chat Bot",
+      title: "Mini Bot",
       description:
         "An intelligent chatbot powered by OpenAI's GPT, featuring natural language processing and context-aware conversations.",
-      image: "https://images.pexels.com/photos/3577561/pexels-photo-3577561.jpeg",
-      technologies: ["Python", "FastAPI", "OpenAI API", "React", "WebSocket"],
+      image:"",
+      technologies: ["", "", "", "React", ""],
       liveUrl: "https://ai-chatbot-demo.com",
       githubUrl: "https://github.com/avinashkr147",
       featured: true,
@@ -127,10 +116,15 @@ export default function PortfolioOne() {
       { name: "Redux-Toolkit", level: 95, icon: "⚙️" },
       { name: "React Query", level: 95, icon: "🔗" },
     ],
+     backend: [
+      { name: "Python", level: 95, icon: "🐍" },
+      { name: "SQL", level: 88, icon: "   " },
+      
+    ],
     tools: [
       { name: "Git/Github", level: 95, icon: "📝" },
-      { name: "Docker", level: 85, icon: "🐳" },
-      { name: "Vercel", level: 90, icon: "▲" },
+      { name: "React Hook Form", level: 85, icon: "📩" },
+      { name: "NextAuth", level: 90, icon: "▲" },
       { name: "VS Code", level: 98, icon: "💙" },
     ],
   }
@@ -150,6 +144,7 @@ export default function PortfolioOne() {
 
   const skillCategories = [
     { id: "frontend", name: "Frontend", icon: Palette },
+    { id: "backend", name: "Backend", icon: Database },
     { id: "tools", name: "Tools", icon: Code },
   ]
 
@@ -241,7 +236,7 @@ export default function PortfolioOne() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
               <a target="_blank"
                 href={`mailto:${userData.email}`}
-                className="group bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-orange-500/25 hover:scale-105 flex items-center space-x-3"
+                className="group bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-[45px] py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-2xl hover:shadow-orange-500/25 hover:scale-105 flex items-center space-x-3"
               >
                 <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 <span>Get In Touch</span>
