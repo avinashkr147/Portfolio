@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react"
+import assets from "./assets/Mypic.jpg"
+
 import {
   Mail,
   Phone,
@@ -41,8 +43,8 @@ export default function PortfolioOne() {
     email: "avinashk14730@gmail.com",
     phone: "+91 9693762626",
     resumeUrl: "/resume.pdf",
-    avatar: "",
-
+    avatar: assets || "/placeholder.svg",
+    
     // Availability
     availableForHire: true,
     availabilityText: "Available For Work/Freelance..🙋‍♂️",
@@ -161,6 +163,7 @@ export default function PortfolioOne() {
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 text-orange-400/20 text-4xl font-mono animate-bounce delay-300">
           {"<>"}
+         
         </div>
         <div className="absolute top-40 right-20 text-blue-400/20 text-3xl font-mono animate-bounce delay-700">
           {"{}"}
