@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react"
-import assets from "./assets/Mypic.jpg"
+import MyImage from "./assets/Mypic.jpg";
+import prj1 from "./assets/ss3.png";
+import prj2 from "./assets/ss2.png";
+import prj3 from "./assets/ss1.png";
 
 import {
   Mail,
@@ -43,14 +46,14 @@ export default function PortfolioOne() {
     email: "avinashk14730@gmail.com",
     phone: "+91 9693762626",
     resumeUrl: "/resume.pdf",
-    avatar: assets || "/placeholder.svg",
+    avatar: MyImage || "/placeholder.svg",
     
     // Availability
     availableForHire: true,
     availabilityText: "Available For Work/Freelance..🙋‍♂️",
 
     // Bio
-    bio: "Frontend Developer specializing in modern JavaScript (ES6+), TypeScript, and responsive UI design using React. I enjoy creating clean, responsive, and user-friendly websites. I’m always curious to learn new technologies and improve my skills, and I love solving problems by turning ideas into functional, visually appealing designs. In my free time, I explore modern web trends and work on personal projects to sharpen my craft.",
+    bio: "Frontend Developer specializing in modern JavaScript (ES6+), TypeScript, and responsive UI design using ReactJS,React-Native. I enjoy creating clean, responsive, and user-friendly websites & mobile apps. I’m always curious to learn new technologies and improve my skills, and I love solving problems by turning ideas into functional, visually appealing designs. In my free time, I explore modern tech trends and work on personal projects to sharpen my craft.",
     // Social Links
     social: {
       github: "https://github.com/avinashkr147",
@@ -63,7 +66,7 @@ export default function PortfolioOne() {
       js: "JAVASCRIPT",
       reactjs: "REACT.JS",
       ts: "TYPESCRIPT",
-      nextjs: "NEXT.JS",
+      reactnative: "ReactNative",
     },
   }
 
@@ -73,10 +76,10 @@ export default function PortfolioOne() {
       title: "Musix Academy",
       description:
         "A modern UI , built in next.JS with the help of modern component library AccernityUI, Typescript , TailwindCSS and mobile-responsive design.",
-      image: "https://images.pexels.com/photos/29421581/pexels-photo-29421581.jpeg",
+      image: prj1,
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "UI Component Libraries"],
-      liveUrl: "",
-      githubUrl: "https://github.com/",
+      liveUrl: "https://musix-academy.vercel.app/",
+      githubUrl: "https://github.com/avinashkr147/MusixNext1.git",
       featured: true,
       category: "Web Development",
     },
@@ -85,25 +88,25 @@ export default function PortfolioOne() {
       title: "Mini Gemini",
       description:
         "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.",
-      image: "https://images.pexels.com/photos/13847596/pexels-photo-13847596.jpeg",
+      image:prj3,
       technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-      liveUrl: "https://taskmanager-demo.com",
-      githubUrl: "https://github.com/",
+      liveUrl: "https://ai-chat-app-ashen.vercel.app/",
+      githubUrl: "https://github.com/avinashkr147/AI-Chat-App.git",
       featured: true,
       category: "Frontend Web development",
     },
     
     {
-      id: 4,
-      title: "Mini Bot",
+      id: 3,
+      title: "GenUI",
       description:
         "An intelligent chatbot powered by OpenAI's GPT, featuring natural language processing and context-aware conversations.",
-      image:"",
-      technologies: ["", "", "", "React", ""],
-      liveUrl: "https://ai-chatbot-demo.com",
-      githubUrl: "https://github.com/avinashkr147",
+      image:prj2,
+      technologies: [ "TailwindCSS", "React.js"],
+      liveUrl: "https://gen-ui-omega.vercel.app/",
+      githubUrl: "https://github.com/avinashkr147/GenUI.git",
       featured: true,
-      category: "AI/ML",
+      category: "Frontend",
     },
   ]
 
@@ -111,6 +114,7 @@ export default function PortfolioOne() {
     frontend: [
       { name: "React.js", level: 95, icon: "⚛️" },
       { name: "Next.js", level: 90, icon: "▲" },
+      { name: "ReactNative", level: 90, icon: "▲" },
       { name: "TypeScript", level: 88, icon: "📘" },
       { name: "Tailwind CSS", level: 92, icon: "🎨" },
       { name: "JavaScript", level: 95, icon: "🟨" },
@@ -230,7 +234,7 @@ export default function PortfolioOne() {
 
               </div>
               <div className="text-center">
-                <div className="text-2xl font-black text-purple-400 mb-1">{userData.techstack.nextjs}</div>
+                <div className="text-2xl font-black text-purple-400 mb-1">{userData.techstack.reactnative}</div>
 
               </div>
             </div>
@@ -295,7 +299,7 @@ export default function PortfolioOne() {
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center space-x-2 bg-neutral-900/50 px-4 py-2 rounded-lg">
                     <MonitorSmartphone className="w-5 h-5 text-orange-400" />
-                    <span className="text-neutral-300">Web Enthusiast</span>
+                    <span className="text-neutral-300">UI/UX Enthusiast</span>
                   </div>
                   <div className="flex items-center space-x-2 bg-neutral-900/50 px-4 py-2 rounded-lg">
                     <Heart className="w-5 h-5 text-red-400" />
