@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
-import MyImage from "./assets/Mypic.jpg";
+import MyImage from "./assets/developer.jpg";
 import prj1 from "./assets/ss3.png";
 import prj2 from "./assets/ss2.png";
-import prj3 from "./assets/ss1.png";
+import prj3 from "./assets/mm.png";
 
 import {
   Mail,
@@ -57,7 +57,7 @@ export default function PortfolioOne() {
     // Social Links
     social: {
       github: "https://github.com/avinashkr147",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "http://www.linkedin.com/in/avinash-kumar-gupta-94273b250",
       twitter: "https://twitter.com/",
     },
 
@@ -75,32 +75,32 @@ export default function PortfolioOne() {
       id: 1,
       title: "Musix Academy",
       description:
-        "A modern UI , built in next.JS with the help of modern component library AccernityUI, Typescript , TailwindCSS and mobile-responsive design.",
+        "A modern UI,built in next.JS with the help of modern component library AccernityUI,Typescript , TailwindCSS and  it's mobile-responsive.",
       image: prj1,
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "UI Component Libraries"],
       liveUrl: "https://musix-academy.vercel.app/",
       githubUrl: "https://github.com/avinashkr147/MusixNext1.git",
       featured: true,
-      category: "Web Development",
+      category: "frontend",
     },
     {
       id: 2,
-      title: "Mini Gemini",
+      title: "Multimind AI",
       description:
-        "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.",
+        "Everything you need to create, enhance, and optimize your content with cutting-edge AI technology.",
       image:prj3,
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-      liveUrl: "https://ai-chat-app-ashen.vercel.app/",
-      githubUrl: "https://github.com/avinashkr147/AI-Chat-App.git",
+      technologies: ["React.js", "TailwindCSS", "Clerk", "neondb", "cloudinary"],
+      liveUrl: "https://multimind-ai-psi.vercel.app/",
+      githubUrl: "https://github.com/avinashkr147/MultiMindAI",
       featured: true,
-      category: "Frontend Web development",
+      category: "MERN",
     },
     
     {
       id: 3,
       title: "GenUI",
       description:
-        "An intelligent chatbot powered by OpenAI's GPT, featuring natural language processing and context-aware conversations.",
+        "",
       image:prj2,
       technologies: [ "TailwindCSS", "React.js"],
       liveUrl: "https://gen-ui-omega.vercel.app/",
@@ -123,14 +123,15 @@ export default function PortfolioOne() {
       { name: "React Query", level: 95, icon: "🔗" },
     ],
      backend: [
-      { name: "Python", level: 95, icon: "🐍" },
-      { name: "SQL", level: 88, icon: "   " },
+      { name: "SQL", level: 65, icon: "   " },
+      { name: "Python", level: 80, icon: "   " },
       
     ],
     tools: [
       { name: "Git/Github", level: 95, icon: "📝" },
-      { name: "React Hook Form", level: 85, icon: "📩" },
-      { name: "NextAuth", level: 90, icon: "▲" },
+      { name: "PostMan", level: 85, icon: "📩" },
+      { name: "Appwrite", level: 90, icon: "▲" },
+      { name: "Firebase", level: 90, icon: "🔥" },
       { name: "VS Code", level: 98, icon: "💙" },
     ],
   }
@@ -331,12 +332,8 @@ export default function PortfolioOne() {
                   >
                     <Twitter className="w-6 h-6" />
                   </a>
-                  <a
-                    href={userData.social.website}
-                    className="w-12 h-12 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 hover:border-green-500 rounded-xl flex items-center justify-center text-neutral-400 hover:text-green-400 transition-all duration-300 hover:scale-110"
-                  >
-                    <Instagram className="w-6 h-6" />
-                  </a>
+                  
+              
                 </div>
               </div>
 
@@ -366,7 +363,7 @@ export default function PortfolioOne() {
                     </div>
                     <div className="text-neutral-400 ml-4">
                       skills: [<span className="text-green-400">'React.js'</span>,{" "}
-                      <span className="text-green-400">'Next.js'</span>,{" "}
+                      <span className="text-green-400">'ReactNative'</span>,{" "}
                       <span className="text-green-400">'JavaScript','TypeScript'</span>],
                     </div>
                     <div className="text-neutral-400 ml-4">
